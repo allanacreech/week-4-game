@@ -1,2 +1,2 @@
 # week-4-game
-jem or card game jquery
+gemstone or card game jquery
