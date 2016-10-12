@@ -1,0 +1,57 @@
+/*import the marker font from here*/
+@import url(http://fonts.googleapis.com/css?family=Permanent+Marker);
+
+/*This is forcing body to whole page*/
+body{height:100%;
+	width:100%;
+	background: url(https://s-media-cache-ak0.pinimg.com/originals/02/d9/24/02d9244e448b93a25dd27c15aa27f379.jpg) no-repeat center center fixed; 
+	/*  This should allow the game to resize appropriately*/
+	-webkit-background-size: cover;  
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	/*Keeping all wording in the middle for right now*/
+
+}
+
+h1, h2, h3, h4, h5 {	
+	font-family: 'Permanent Marker', 'cursive';
+	text-align: center;
+	color: black;
+	border: solid 1px;
+	background-color: rgb(237,192,91);
+}
+
+p {
+	text-align: center;
+	color: black;
+	border: solid 1px;
+	background-color: rgb(237,192,91);
+	font-size: 1.5em;	
+}
+
+.box{
+	text-align: center;
+	min-height: 100px;
+	padding-top:4px;
+	border: url("http://lighthouselaserarts.com/images/orders%20thumbnail/walnut-treebark-inlay.jpg") 10px;
+	background: url("../images/background.jpg") repeat center center fixed;
+	color: black;
+}
+
+#gameTitle{
+	display: inline-block;
+	padding: 5px;
+	border-bottom: 2px solid black;
+	margin-right: 3px;
+	font-size: 1.5em;
+}
+
+.gemStoneImagesMain{
+	overflow: auto;
+}
+
+#footerImg{
+	text-align: center;
+	z-index: 1;
+}

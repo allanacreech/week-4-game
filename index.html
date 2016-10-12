@@ -4,18 +4,123 @@
 
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Allana Creech-Hangman</title>
+	<title>Allana Creech-Gemstone Quest Game</title>
 
+	<!-- Added link to the jQuery Library -->
+	<script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+
+	<!--added link to marker font -->
 	<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
 	<!-- Bootstrap Core CSS -->
 	<link href="assets/v/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
+	<!--link to the css style sheet for html to find -->
 
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-	
 
-	<script type="text/javascript" src="assets/js/game.js"></script>	
-</body>
-</html>
+
+	<main class ="container">
+		<section class= "row">
+			<section class="col-md-2"></section>
+			<section class="col-md-8 panel panel-default text-left box">
+				<div id ="gameTitle">
+					<!--Game Title-->
+
+					<h1>Escape from Dragon Mountain!</h1>
+
+				</div>
+
+			</section>
+			<section class="col-md-2"></section>
+		</section>
+
+		<!--end of header area-->	
+
+		<!--begining of rules-->
+
+		<div id="rulesForGame">
+			<section class= "row">
+				<section class="col-md-2"></section>
+				<section class="col-md-8 panel panel-defaul text-left box">
+					<!--Paragraph explaining directions for game -->
+					<h3>Your Quest Rules</h3>
+					<p>Dragons have stolen your countries precious gemstones.<br>
+						You have been selected to journey up dragon mountain.<br>
+						Finding yourself in the dragons lair you must collect the gemstone.<br>
+						A number will appear of how much weight you can carry.<br>
+						Now you must click on the gemstones to see how much they weigh.<br>
+						<strong>Be warned.</strong> The gemstones weight changes with each game due to the sneaky dragons!<br>
+						Win to become a hero...or Lose by being eaten.
+						Choose carefully.</p>
+					</section>
+					<section class="col-md-2"></section>
+				</section>
+			</div>
+
+			<!--Area to show gemstone weight needed-->
+
+			<div class="displayOne">
+				<section class="row">
+					<section class="col-md-2"></section>
+					<section class="col-md-4 panel panel-default text-left box">
+						<div id ="gemStoneWeight">
+							<h3>Gemstone Weight You Need</h3>
+						</div>
+					</section>
+
+					<!-- div to show the number of wins and lose-->
+
+					<section class="col-md-4 panel panel-default text-center box">
+						<div class="wins">
+							<h5>Wins:</h5> 
+						</div>
+						<div class="losses">
+							<h5>You Failed: </h5>
+						</div>
+					</section>
+					<section class="col-md-2"></section>
+				</section>
+			</div>
+
+
+			<!--div to show the gemstone images-->
+
+			<div class="gemStoneImagesMain">
+				<section class="row">
+					<section class="col-md-2"></section>
+					<section class="col-md-8 panel panel-default box">
+						<div class="gemStoneImages">
+							<div class="blueGem"><img src="assets/images/blueGem.png"></div>
+							<div class="greenGem"><img src="assets/images/greenGem.png"></div>
+							<div class="pearlGem"><img src="assets/images/pearlGem.png"></div>
+							<div class="redGem"><img src="assets/images/redGem.png"></div>
+						</div>
+						<section class="col-md-2"></section>
+					</section>
+
+
+				</section>
+			</div>
+
+
+			<!--Game totaling Wieght Player has collected-->
+			<div class="displayWeightCollected">
+				<section class="row">
+					<section class="col-md-2"></section>
+					<section class="col-md-8 panel panel-default text-center box">
+						<div id ="gemStoneWeight">
+							<h4>Gemstone Weight You Have Collected</h4>
+						</div>
+					</section>	
+					<section class="col-md-2"></section>
+				</section>
+			</div>
+
+
+		</main>
+
+		<script type="text/javascript" src="assets/javascript/game.js"></script>	
+	</body>
+	</html>
