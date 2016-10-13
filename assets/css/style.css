@@ -35,7 +35,8 @@ p {
 	min-height: 100px;
 	padding-top:4px;
 	border: url("http://lighthouselaserarts.com/images/orders%20thumbnail/walnut-treebark-inlay.jpg") 10px;
-	background: url("../images/background.jpg") repeat center center fixed;
+	/*background: url("../images/background.jpg") repeat center center fixed;*/
+	background: rgb(197,160,160);
 	color: black;
 }
 
@@ -47,8 +48,23 @@ p {
 	font-size: 1.5em;
 }
 
+li {
+	display: inline-block;
+	list-style-type: none;
+	margin-right: 38px;
+	margin-left:38px;
+	text-align: center;
+}
 .gemStoneImagesMain{
-	overflow: auto;
+	display:block;
+	margin:auto;
+	
+}
+.gemStoneImages{
+	float:left;
+	display: inline-block;
+	margin-bottom: 5px;
+	padding: 1px 1px;
 }
 
 #footerImg{
