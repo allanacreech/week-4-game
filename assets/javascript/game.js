@@ -56,8 +56,8 @@ var numberToGuess = randomIntFromInterval(19,120);
 
 //function to click on blue gemstone
 
-$(".gemStoneImages").on('click', function(){
-	counter = counter + parseInt($(this).data('num'));
+$(".crystalIamge").on('click', function(){
+	counter += parseInt($(this).data('num'));
 	alert(counter);
 	
 //code to how what number they need to guess
