@@ -32,36 +32,42 @@ function newCrystals () {
 	}
 	console.log(numbers);
 
-	for(i=0; i<numbers.length;i++){
+	for(i = 0; i < numbers.length; i++){
 		var imageCrystal = $('<img>');
 		imageCrystal.attr('data-num',numbers[i]);
 		imageCrystal.attr('src',crystals[i]);
 		imageCrystal.attr('alt','crystals');
 		imageCrystal.addClass('crystalIamge');
 		$('.gemStoneImages').append(imageCrystal);
+		newGame();
 	}
+
 
 }
 
 //function to start game
 function newGame(){
+	
 	//counter will each game starts at 0
 	counter = 0;
-	$('.yourNumber').text(counter);
+	$('.yourScore').text(counter);
+
 	function randomIntFromInterval(min,max){
 		return Math.floor(Math.random()*(max-min+1)+min);
 	}
 //variable to have random number
 var numberToGuess = randomIntFromInterval(19,120);
 
-//function to click on blue gemstone
+$('.value').text(numberToGuess);
+
+//function to click on gemstones
 
 $(".crystalIamge").on('click', function(){
 	counter += parseInt($(this).data('num'));
-	alert(counter);
+	
 	
 //code to how what number they need to guess
-$(".yourNumber").text(counter);
+$(".yourScore").text(counter);
 
 if (counter == numberToGuess){
 	$('#status').text("You Got the Gemstones!");

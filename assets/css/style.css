@@ -61,10 +61,16 @@ li {
 	
 }
 .gemStoneImages{
-	float:left;
-	display: inline-block;
-	margin-bottom: 5px;
-	padding: 1px 1px;
+	float:none;
+	
+	margin-bottom:10px 10px;
+	margin-right: 25px;
+	padding: 10px 10px;
+}
+
+.crystalImage{
+	border:solid 1px pink;
+	margin-left: 10px;
 }
 
 #footerImg{
