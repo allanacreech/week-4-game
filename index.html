@@ -24,7 +24,7 @@
 <body>
 	
 	<main class ="container">
-	
+
 		<section class= "row">
 			<section class="col-md-2"></section>
 			<section class="col-md-8 panel panel-default text-left box">
@@ -44,8 +44,8 @@
 
 		<!--begining of rules-->
 
-		<div id="rulesForGame">
-			<section class= "row">
+		<section class= "row">
+			<div id="rulesForGame">
 				<section class="col-md-2"></section>
 				<section class="col-md-8 panel panel-defaul text-left box">
 					<!--Paragraph explaining directions for game -->
@@ -62,13 +62,14 @@
 						Choose carefully.</p>
 					</section>
 					<section class="col-md-2"></section>
-				</section>
-			</div>
+				</div>
+			</section>
+
 
 			<!--Area to show gemstone weight needed-->
 
-			<div class="displayOne">
-				<section class="row">
+			<section class="row">
+				<div class="displayOne">
 					<section class="col-md-2"></section>
 					<section class="col-md-4 panel panel-default text-left box">
 						<h3>Gemstone Weight You Need</h3>
@@ -87,47 +88,48 @@
 					</section>
 
 					<section class="col-md-2"></section>
-				</section>
-			</div>
+				</div>
+			</section>
+
 
 
 			<!--div to show the gemstone images-->
 
-			<div class="gemStoneImagesMain">
-				<section class="row">
+			<section class="row">
+				<div class="gemStoneImagesMain">
 					<section class="col-md-2"></section>
 					<section class="col-md-8 panel panel-default box">
-						<div class="gemStoneImages"></div>
-						<div id = "crystals"></div>
-								<section class="col-md-2"></section>
-							</section>
+						<div class = "crystals"></div>
+						<section class="col-md-2"></section>
+					</section>
+
+				</div>
+			</section>
 
 
-						</section>
-					</div>
+
+			<!--Game totaling Wieght Player has collected-->
+			<section class="row">
+				<div class="displayWeightCollected">
+					<section class="col-md-2"></section>
+					<section class="col-md-8 panel panel-default text-center box">
+						<!--area for your number-->
+						<h4>Your Weight So Far</h4>
+						<div class="yourScore"></div>
+
+						<!--area for total your number-->
+						<div class ="yourNumberTotal"></div>
+					</section>	
+					<section class="col-md-2"></section>
+				</div>
+			</section>
 
 
-					<!--Game totaling Wieght Player has collected-->
-					<div class="displayWeightCollected">
-						<section class="row">
-							<section class="col-md-2"></section>
-							<section class="col-md-8 panel panel-default text-center box">
-								<!--area for your number-->
-								<h4>Your Weight So Far</h4>
-								<div class="yourScore"></div>
 
-								<!--area for total your number-->
-								<div class ="yourNumberTotal"></div>
-							</section>	
-							<section class="col-md-2"></section>
-						</section>
-					</div>
+		</main>
 
-
-				</main>
-
-				<!-- Added link to the jQuery Library and game JS -->
-				<script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
-				<script type="text/javascript" src="assets/javascript/game.js"></script>	
-			</body>
-			</html>
+		<!-- Added link to the jQuery Library and game JS -->
+		<script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="assets/javascript/game.js"></script>	
+	</body>
+	</html>
